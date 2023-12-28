@@ -1,0 +1,15 @@
+Concorrência x Paralelismo
+
+Paralelismo: 
+ - Fazer duas coisas exatamente ao mesmo tempo. 
+ - Multiplos processadores.
+ - Exige mais do SO e do hardware.
+
+Concorrência: 
+ - Capacidade de administrar múltiplas tarefas. 
+ - Pode acontecer em um único processador.
+ - Tem overhead de administração das tarefas.
+ - Exige modelagem do sistema.
+ - Composição de processos (funções) que executam de forma independente
+
+ Go é uma linguagem concorrente
