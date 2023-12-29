@@ -1,0 +1,9 @@
+O arquivo de teste deve ter sufixo _test.go. Exemplo: matematica_test.go
+A função de testes deve ter a seguinte assinatura: func TestMedia(t *testing.T)
+Para rodar os testes: go test
+Para rodar TODOS os testes de uma pasta e subpastas: go test .\...
+Para rodar os testes verbosos: go test -v
+Para rodar os testes com cobertura: go test -cover
+Para rodar os testes com cobertura salvando o resultado em uma arquivo chamado resultado.out: go test -coverprofile="resultado.out"
+Para ler o arquivo com o resultado de cobertura dos testes chamado resultado.out: go tool cover -func="resultado.out"
+Para ler o arquivo com o resultado de cobertura dos testes chamado resultado.out em formato html: go tool cover -html="resultado.out"
