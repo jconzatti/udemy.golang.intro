@@ -1,0 +1,2 @@
+Instalado o driver para mssql: github.com/microsoft/go-mssqldb
+Para utilizar com SQL Server o protocolo TCP precisa estar habilitado com a porta 1433
