@@ -1,2 +1,9 @@
 Instalado o driver para mssql: github.com/microsoft/go-mssqldb
 Para utilizar com SQL Server o protocolo TCP precisa estar habilitado com a porta 1433
+
+Instalado o driver para sqlite3: github.com/mattn/go-sqlite3
+Para utilizar com este pacote de SQLite é necessário intalar o GCC e habilitar o CGO nas variáveis de ambiente do golang
+1. Habilitar o CGO: go env -w CGO_ENABLED=1
+2. Baixar o Mingw64 13.2.0 (compilador GCC) em: https://github.com/niXman/mingw-builds-binaries/releases/download/13.2.0-rt_v11-rev1/x86_64-13.2.0-release-posix-seh-msvcrt-rt_v11-rev1.7z
+3. Descompactar em C:/Mingw64
+4. Adicionar C:/Mingw64/bin nas variáveis de ambiente do Windows: gcc --version
