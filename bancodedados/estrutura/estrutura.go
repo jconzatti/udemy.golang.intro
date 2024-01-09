@@ -30,6 +30,8 @@ func main() {
 	}
 	defer bancoDeDado.Close()
 
-	executar(bancoDeDado, "create table teste (id integer primary key, descricao text)")
-	executar(bancoDeDado, "drop table teste")
+	executar(bancoDeDado, "drop table if exists usuarios")
+	executar(bancoDeDado, `create table usuarios (
+		id integer primary key autoincrement, 
+		nome text)`)
 }
