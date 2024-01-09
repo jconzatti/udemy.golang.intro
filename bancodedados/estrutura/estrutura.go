@@ -24,7 +24,7 @@ func main() {
 	//parametrosParaConexao := fmt.Sprintf("server=%s;user id=%s;password=%s;database=%s", servidor, usuario, senha, banco)
 
 	//bancoDeDado, erro := sql.Open("sqlserver", parametrosParaConexao)
-	bancoDeDado, erro := sql.Open("sqlite3", "./bancodedados/estrutura/teste.db3")
+	bancoDeDado, erro := sql.Open("sqlite3", "./bancodedados/teste.db3")
 	if erro != nil {
 		panic(erro)
 	}

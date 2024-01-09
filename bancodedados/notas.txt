@@ -1,5 +1,11 @@
 Instalado o driver para mssql: github.com/microsoft/go-mssqldb
 Para utilizar com SQL Server o protocolo TCP precisa estar habilitado com a porta 1433
+	servidor := "localhost\\express"
+	usuario := "ccj"
+	senha := "123mudar"
+	banco := "master"
+	parametrosParaConexao := fmt.Sprintf("server=%s;user id=%s;password=%s;database=%s", servidor, usuario, senha, banco)
+	bancoDeDado, erro := sql.Open("sqlserver", parametrosParaConexao)
 
 Instalado o driver para sqlite3: github.com/mattn/go-sqlite3
 Para utilizar com este pacote de SQLite é necessário intalar o GCC e habilitar o CGO nas variáveis de ambiente do golang
